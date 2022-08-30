@@ -27,6 +27,7 @@ body{
 header{
     grid-area: header;
     background-color: #0B3142;
+    background: linear-gradient(to bottom, #0B3142, #0f587a) no-repeat;
 }
 header img{
     border-radius:50%;
@@ -37,6 +38,12 @@ header ul{
     justify-content: center;
     list-style-type: none;
 }
+ /*  animacion */
+li a:hover{
+    color: gray;
+}
+/*  animacion */
+
 header ul li a{
  color: white;
  padding: 0px 10px;
@@ -55,8 +62,11 @@ header ul li a{
     color: white;
     text-decoration: none;
 }
-                            
-
+/*  animacion */
+.sesion p a:hover{
+    color: gray;
+}
+/*  animacion */
 
 
 #redes{
@@ -77,6 +87,7 @@ nav h1{
     font-family: 'Courier New', Courier, monospace;
     background-color: #0F0326;
     margin: 20px 200px 0px 150px;
+    background: linear-gradient(to bottom, #0F0326, #220952) no-repeat;
 }
 .muestras{
     display: flex;
@@ -90,6 +101,7 @@ nav h1{
     margin: 20px 0px;
     padding: 20px;
     border-radius: 10px;
+    background: linear-gradient(to bottom, #0F0326, #220952) no-repeat;
 }
                             /* NAV*/
 
@@ -107,6 +119,7 @@ nav h1{
     font-family: 'Courier New', Courier, monospace;
     background-color: #0F0326;
     margin: 20px 200px 0px 200px;
+    background: linear-gradient(to bottom, #0F0326, #220952) no-repeat;
 }
 .formu{
     background-color: #9B5094;
@@ -117,7 +130,7 @@ nav h1{
     padding: 50px;
     margin: 10px 200px 10px 200px;
     border-radius: 10px;
-
+    background: linear-gradient(to bottom, #9B5094, #a8279b) no-repeat;
 }
                             /*FORMULARIO*/
 
@@ -128,6 +141,7 @@ nav h1{
     background-color: #0F0326;
     margin: 0px 150px;
     border-radius: 10px;
+    background: linear-gradient(to bottom, #0F0326, #220952) no-repeat;
 }
 .reseñas h1{
     display: flex;
@@ -162,6 +176,7 @@ nav h1{
 footer{
     grid-area: footer;
     background-color: #0B3142;
+    background: linear-gradient(to bottom, #0B3142, #0f587a) no-repeat;
 }
 footer p{
     color: white;
@@ -198,6 +213,7 @@ footer p{
 header{
     grid-area: header;
     background-color: #0B3142;
+    background: linear-gradient(to bottom, #0B3142, #0f587a) no-repeat;
 }
 header img{
     border-radius:50%;
