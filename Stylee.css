@@ -1,0 +1,344 @@
+body{
+    background-image: url(https://s3.amazonaws.com/arc-wordpress-client-uploads/infobae-wp/wp-content/uploads/2018/09/19185125/via-lactea.jpg);
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-attachment: fixed;
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+.contenedor{
+    display: grid;
+    grid-template-areas: 
+    "header header header header"
+    "nav nav formulario formulario"
+    "nav nav formulario formulario"
+    "reseñas reseñas reseñas reseñas"
+    "footer footer footer footer"
+    ;
+ grid-template-columns: 1fr 1fr 1fr 1fr ;
+ grid-template-rows: 1fr 2fr 2fr 2fr 1fr;
+ grid-column-gap: 10px;
+ grid-row-gap:10px;
+}
+                                /* HEADER */ 
+header{
+    grid-area: header;
+    background-color: #0B3142;
+}
+header img{
+    border-radius:50%;
+}
+header ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+}
+header ul li a{
+ color: white;
+ padding: 0px 10px;
+ font-weight: bold;
+ text-decoration: none;
+}
+
+.sesion{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    color: white;
+}
+.sesion p a{
+    padding: 0px 5px;
+    color: white;
+    text-decoration: none;
+}
+                            
+
+
+
+#redes{
+    padding: 0px 10px;
+}
+                                /* HEADER */ 
+
+                                /* NAV*/
+nav{
+    grid-area: nav;
+    
+}
+nav h1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #42BFDD;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #0F0326;
+    margin: 20px 200px 0px 150px;
+}
+.muestras{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.muestras img{
+    padding: 50px 20px;
+    background-color: #0F0326;
+    margin: 20px 0px;
+    padding: 20px;
+    border-radius: 10px;
+}
+                            /* NAV*/
+
+                            /*FORMULARIO*/
+.formulario{
+    grid-area: formulario;
+    
+}
+.formulario h2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #42BFDD;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #0F0326;
+    margin: 20px 200px 0px 200px;
+}
+.formu{
+    background-color: #9B5094;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 20px;
+    padding: 50px;
+    margin: 10px 200px 10px 200px;
+    border-radius: 10px;
+
+}
+                            /*FORMULARIO*/
+
+                            /*RESEÑAS*/
+
+.reseñas{
+    grid-area: reseñas;
+    background-color: #0F0326;
+    margin: 0px 150px;
+    border-radius: 10px;
+}
+.reseñas h1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #42BFDD ;
+}
+
+
+
+.padre{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.hijo{
+    padding: 0px 50px;
+    
+}
+.TextoHijo{
+    padding: 0px ;
+    margin: 0px;
+    text-align: center;
+    color: #42BFDD ;
+    font-size: 20px;
+    
+}
+                            /*RESEÑAS*/
+
+                            /*FOOTER*/
+
+footer{
+    grid-area: footer;
+    background-color: #0B3142;
+}
+footer p{
+    color: white;
+    margin: 15px 2px;
+}
+
+                            /*FOOTER*/
+
+                        /* Media queries */ 
+
+@media (max-width:480px){
+    .contenedor{
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "nav"
+        "formulario"
+        "reseñas"
+        "footer"
+        ;
+     grid-template-columns: 1fr;
+     grid-template-rows: 120px 500px 600px 800px 80px;
+     
+    }
+    .padre{
+        display: flex;
+        flex-wrap: wrap; 
+    }
+    .formulario{
+        grid-area: auto;
+    }
+    
+                            /* HEADER */ 
+header{
+    grid-area: header;
+    background-color: #0B3142;
+}
+header img{
+    border-radius:50%;
+}
+header ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    list-style-type: none;
+}
+header ul li a{
+ color: white;
+ padding: 0px 10px;
+ font-weight: bold;
+ text-decoration: none;
+}
+
+.sesion{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    color: white;
+}
+.sesion p a{
+    padding: 0px 5px;
+    color: white;
+    text-decoration: none;
+}
+                            
+
+
+
+#redes{
+    padding: 0px 10px;
+}
+                            /* HEADER */ 
+                            /* NAV*/
+nav{
+    grid-area: nav;
+    margin: 40px 0px;
+}
+nav h1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #42BFDD;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #0F0326;
+    margin: 20px 0px;
+}
+.muestras{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.muestras img{
+    padding: 50px 20px;
+    background-color: #0F0326;
+    margin: 20px 0px;
+    padding: 20px;
+    border-radius: 10px;
+}
+                            /* NAV*/
+
+
+
+                            /*FORMULARIO*/
+     .formulario{
+         grid-area: formulario;
+        
+    }
+    .formulario h2{
+        display: flex;
+        flex-direction: row;
+         justify-content: center;
+         color: #42BFDD;
+        font-size: 30px;
+         font-family: 'Courier New', Courier, monospace;
+         background-color: #0F0326;
+         margin: 20px 0PX;
+     }
+     .formu{
+         background-color: #9B5094;
+        display: flex;
+         flex-direction: row;
+         justify-content: center;
+         font-size: 20px;
+         padding: 50px;
+         margin: 10px 10px 0px 10px;
+        border-radius: 10px;
+      
+    }
+                            /*FORMULARIO*/
+
+                            /*RESEÑAS*/
+
+.reseñas{
+    grid-area: reseñas;
+    background-color: #0F0326;
+    margin: 0px 150px;
+    border-radius: 10px;
+}
+.reseñas h1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #42BFDD ;
+}
+
+
+
+.padre{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.hijo{
+    padding: 0px 50px;
+    
+}
+.TextoHijo{
+    padding: 0px ;
+    margin: 0px;
+    text-align: center;
+    color: #42BFDD ;
+    font-size: 20px;
+    
+}
+                            /*RESEÑAS*/
+}
+                        /* Media queries */     
+
+
+
+
+
+
+
+
+
+
+
+
